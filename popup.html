@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Claude Chat to Markdown</title>
+<style>
+  body {
+    width: 240px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding: 16px;
+    margin: 0;
+    background: #1e1e1e;
+    color: #e6e6e6;
+  }
+  h1 {
+    font-size: 14px;
+    margin: 0 0 12px;
+    font-weight: 600;
+    color: #f0f0f0;
+  }
+  button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    background: #d97757;
+    color: #1e1e1e;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #e88a68;
+  }
+  button:disabled {
+    background: #555;
+    color: #999;
+    cursor: not-allowed;
+  }
+  #status {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #aaa;
+    min-height: 14px;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+  <h1>Claude Chat → Markdown</h1>
+  <button id="saveBtn">会話を保存</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
